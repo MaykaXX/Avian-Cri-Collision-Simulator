@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "generator": "collision_risk_engine.py",
+    "note": "Synthetic simulation log. Latencies are sampled from statistical models, not measured.",
+    "simulation_start": "2026-10-15T21:00:00.000Z",
+    "seed": 42,
+    "threshold_on": 0.75,
+    "threshold_off": 0.48,
+    "message_count": 4
+  },
+  "messages": [
+    {
+      "topic": "facade/bms/bird-protection/command",
+      "qos": 1,
+      "retain": false,
+      "published_at": "2026-10-15T23:18:50.000Z",
+      "bms_ack_at": "2026-10-15T23:18:50.190Z",
+      "latency_ms": {
+        "edge_inference_ms": 38.68,
+        "uplink_ms": 57.3,
+        "bms_processing_ms": 37.61,
+        "ack_downlink_ms": 57.3,
+        "end_to_end_ms": 190.88
+      },
+      "payload": {
+        "schema": "bms.bird_protection.command/1.0",
+        "message_id": "cre-0001",
+        "timestamp": "2026-10-15T23:18:50.000Z",
+        "command": "ACTIVATE_BIRD_PROTECTION",
+        "cri": 0.759,
+        "cri_threshold": 0.75,
+        "facade_dimming_pct": 75,
+        "acoustic_emitters": {
+          "enabled": true,
+          "freq_khz_min": 4.0,
+          "freq_khz_max": 6.0
+        },
+        "inputs": {
+          "d_radar": 0.755,
+          "a_calls": 0.964,
+          "m_weather": 0.518,
+          "l_lux": 0.764,
+          "facade_lux": 458.6,
+          "visibility_m": 360.0
+        }
+      }
+    },
+    {
+      "topic": "facade/bms/bird-protection/command",
+      "qos": 1,
+      "retain": false,
+      "published_at": "2026-10-16T00:48:00.000Z",
+      "bms_ack_at": "2026-10-16T00:48:00.229Z",
+      "latency_ms": {
+        "edge_inference_ms": 36.82,
+        "uplink_ms": 76.48,
+        "bms_processing_ms": 39.63,
+        "ack_downlink_ms": 76.48,
+        "end_to_end_ms": 229.41
+      },
+      "payload": {
+        "schema": "bms.bird_protection.command/1.0",
+        "message_id": "cre-0002",
+        "timestamp": "2026-10-16T00:48:00.000Z",
+        "command": "RELEASE_BIRD_PROTECTION",
+        "cri": 0.384,
+        "cri_threshold": 0.48,
+        "facade_dimming_pct": 0,
+        "acoustic_emitters": {
+          "enabled": false
+        },
+        "inputs": {
+          "d_radar": 0.799,
+          "a_calls": 0.0,
+          "m_weather": 0.758,
+          "l_lux": 0.185,
+          "facade_lux": 111.0,
+          "visibility_m": 134.0
+        }
+      }
+    },
+    {
+      "topic": "facade/bms/bird-protection/command",
+      "qos": 1,
+      "retain": false,
+      "published_at": "2026-10-16T01:22:50.000Z",
+      "bms_ack_at": "2026-10-16T01:22:50.138Z",
+      "latency_ms": {
+        "edge_inference_ms": 27.72,
+        "uplink_ms": 36.59,
+        "bms_processing_ms": 38.01,
+        "ack_downlink_ms": 36.59,
+        "end_to_end_ms": 138.91
+      },
+      "payload": {
+        "schema": "bms.bird_protection.command/1.0",
+        "message_id": "cre-0003",
+        "timestamp": "2026-10-16T01:22:50.000Z",
+        "command": "ACTIVATE_BIRD_PROTECTION",
+        "cri": 0.774,
+        "cri_threshold": 0.75,
+        "facade_dimming_pct": 75,
+        "acoustic_emitters": {
+          "enabled": true,
+          "freq_khz_min": 4.0,
+          "freq_khz_max": 6.0
+        },
+        "inputs": {
+          "d_radar": 0.765,
+          "a_calls": 0.8,
+          "m_weather": 0.763,
+          "l_lux": 0.751,
+          "facade_lux": 450.5,
+          "visibility_m": 132.0
+        }
+      }
+    },
+    {
+      "topic": "facade/bms/bird-protection/command",
+      "qos": 1,
+      "retain": false,
+      "published_at": "2026-10-16T02:59:30.000Z",
+      "bms_ack_at": "2026-10-16T02:59:30.216Z",
+      "latency_ms": {
+        "edge_inference_ms": 26.93,
+        "uplink_ms": 76.57,
+        "bms_processing_ms": 36.69,
+        "ack_downlink_ms": 76.57,
+        "end_to_end_ms": 216.76
+      },
+      "payload": {
+        "schema": "bms.bird_protection.command/1.0",
+        "message_id": "cre-0004",
+        "timestamp": "2026-10-16T02:59:30.000Z",
+        "command": "RELEASE_BIRD_PROTECTION",
+        "cri": 0.468,
+        "cri_threshold": 0.48,
+        "facade_dimming_pct": 0,
+        "acoustic_emitters": {
+          "enabled": false
+        },
+        "inputs": {
+          "d_radar": 0.696,
+          "a_calls": 0.517,
+          "m_weather": 0.482,
+          "l_lux": 0.19,
+          "facade_lux": 114.3,
+          "visibility_m": 417.0
+        }
+      }
+    }
+  ]
+}
