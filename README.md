@@ -97,4 +97,4 @@ Motivation and context: Loss et al. (2014), *The Condor* 116(1); Van Doren et al
 
 ## License
 
-MIT — see [LICENSE](LICENSE). Replace `[Your Name]` in the license file with the copyright holder.
+MIT — see [LICENSE](LICENSE). 
